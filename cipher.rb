@@ -1,4 +1,6 @@
-def caesar_cipher(string = 'Test-string! With punctuation.',shift = 5)
+# class Cipher contains the caesar_cipher method
+class Cipher
+  def caesar_cipher(string = 'Test-string! With punctuation.',shift = 5)
     reference_string = '';
     for i in ('a'..'z') do
         reference_string += i;
@@ -25,5 +27,6 @@ def caesar_cipher(string = 'Test-string! With punctuation.',shift = 5)
     end
 
     return output_string;
+  end
 end
 

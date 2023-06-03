@@ -1,11 +1,12 @@
 # spec/caesar_spec.rb
-require '../cipher'
+require './cipher'
+describe Cipher do
+  describe "#caesar_cipher" do
+    it "shifts string by one character" do
+      expect(caesar_cipher('cat', 1)).to eql('dbr')
+    end
 
-describe "#caesar_cipher" do
-  it "shifts string by one character" do
-    expect(subject.caesar_cipher('cat', 1)).to eql('dbr')
+
+
   end
-
-
-
 end
